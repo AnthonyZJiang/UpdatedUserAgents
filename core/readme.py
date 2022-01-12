@@ -28,7 +28,7 @@ class ReadMe:
                 if new_lines[i].find(f'Last {item_str}:') != -1:
                     flag -= 1
                     new_lines[i] = f'**Last {item_str}:** {time}  \n'
-                    logging.info('Update %s time: ', time)
+                    logging.info('Update "Last %s" time: %s', item_str, time)
                 if flag == 0:
                     return new_lines
         logging.error('ReadMe time update incomplete.')
@@ -44,7 +44,7 @@ class ReadMe:
         return template
 
     def update_time_and_ua(self, new_UA):
-        new_lines = self._update_time_in_lines(['check', 'update'])
+        new_lines = self._update_time_in_lines(['checked', 'updated'])
         ua_text = self._get_new_ua_text(new_UA)
         with open('README.md', 'w') as f:
             for line in new_lines:
@@ -57,7 +57,7 @@ class ReadMe:
         logging.info('ReadMe updated.')
 
     def update_check_time(self):
-        new_lines = self._update_time_in_lines(['check', ])
+        new_lines = self._update_time_in_lines(['checked', ])
         with open('README.md', 'w') as f:
             f.writelines(new_lines)
         logging.info('ReadMe updated.')
