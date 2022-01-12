@@ -10,11 +10,14 @@ You can find some of the latest user agents here.
 
 Feel free to fetch [useragents.json](https://raw.githubusercontent.com/tmxkn1/UpdatedUserAgents/master/useragents.json) and use the contents in your project.
 
-### *Bonus*:
+### Scripts
 
-You may use the scripts for scraping data from [WhatIsMyBrowser.com](whatismybrowser.com) and git_integration.
+```
+python main.py -e -g -l info
 
-Please do not spam the data scraping script as it overloads the server and you will be detected and banned very quickly. Using it occasionally is fine. If frequent use is needed, you should consider supporting the website and paying for the [API](https://developers.whatismybrowser.com/api/).
+python main.py -h # for help on the commands
+```
+**NOTE:** The script scraps data from [WhatIsMyBrowser.com](whatismybrowser.com). Please do not spam the data scraping script as it overloads the server and you will be detected and banned very quickly. Using it occasionally is fine. If frequent use is needed, you should consider supporting the website and paying for the [API](https://developers.whatismybrowser.com/api/).
 
 # Current User Agents
 ### Chrome

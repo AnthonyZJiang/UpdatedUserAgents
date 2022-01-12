@@ -1,3 +1,10 @@
-.vscode
-update.py
-readme_template
+#python
+__pycache__/
+.DS_Store
+*.pyc
+
+#vscode
+.vscode*
+
+logs/*
+*.bat
