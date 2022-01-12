@@ -1,7 +1,22 @@
-**Last check:**  2022-01-12 00:44:18
+# Updated User Agents
+You can find some of the latest user agents here.
+
+**Last check:** 2022-01-12 14:03:16  
 **Last update:** 2022-01-12 00:44:23
 
-# Chrome
+# Use
+
+### Just for a list of APIs
+
+Feel free to fetch [useragents.json](https://raw.githubusercontent.com/tmxkn1/UpdatedUserAgents/master/useragents.json) and use the contents in your project.
+
+### *Bonus*:
+
+You may use the scripts for scraping data from [WhatIsMyBrowser.com](whatismybrowser.com) and git_integration.
+
+Please do not spam the data scraping script as it overloads the server and you will be detected and banned very quickly. Using it occasionally is fine. If frequent use is needed, you should consider supporting the website and paying for the [API](https://developers.whatismybrowser.com/api/).
+
+## Chrome
 
 Windows:
 ```
@@ -23,7 +38,7 @@ iOS:
 Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/97.0.4692.72 Mobile/15E148 Safari/604.1
 ```
 
-# Firefox
+## Firefox
 
 Windows:
 ```
@@ -45,7 +60,7 @@ iOS:
 Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/40.0 Mobile/15E148 Safari/605.1.15
 ```
 
-# Edge
+## Edge
 
 Windows:
 ```
