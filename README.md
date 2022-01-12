@@ -16,7 +16,8 @@ You may use the scripts for scraping data from [WhatIsMyBrowser.com](whatismybro
 
 Please do not spam the data scraping script as it overloads the server and you will be detected and banned very quickly. Using it occasionally is fine. If frequent use is needed, you should consider supporting the website and paying for the [API](https://developers.whatismybrowser.com/api/).
 
-## Chrome
+# Current User Agents
+### Chrome
 
 Windows:
 ```
@@ -38,7 +39,7 @@ iOS:
 Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/97.0.4692.72 Mobile/15E148 Safari/604.1
 ```
 
-## Firefox
+### Firefox
 
 Windows:
 ```
@@ -60,7 +61,7 @@ iOS:
 Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/40.0 Mobile/15E148 Safari/605.1.15
 ```
 
-## Edge
+### Edge
 
 Windows:
 ```
