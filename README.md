@@ -1,8 +1,8 @@
+**Last checked:** 2022-01-12 14:03:16  
+**Last updated:** 2022-01-12 00:44:23
+
 # Updated User Agents
 You can find some of the latest user agents here.
-
-**Last check:** 2022-01-12 14:03:16  
-**Last update:** 2022-01-12 00:44:23
 
 # Use
 
