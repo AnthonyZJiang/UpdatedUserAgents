@@ -10,4 +10,4 @@ def git_add_commit_push():
     repo.index.commit('Update useragents')
     origin = repo.remote(name='origin')
     origin.push()
-    logging.info('Git commit and push success.')
+    logging.info('Git commit and push succeeded.')
