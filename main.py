@@ -8,9 +8,9 @@ from git_integration import git_add_commit_push
 
 
 def parse_args():
-    args = {'exit_on_completion': False}
+    args = {'quite': False}
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('-e', '--exit-on-completion', action='store_true', dest='exit_on_completion', default=False)
+    arg_parser.add_argument('-q', '--quite', action='store_true', dest='quite', default=False)
     arg_parser.add_argument('-l', '--log-level', action='store', dest='log_level', default='INFO')
     arg_parser.add_argument('-g', '--enable-git-integration', action='store_true', dest='git_integration', default=False)
     args = arg_parser.parse_args()
@@ -25,10 +25,14 @@ def main(args):
         input('\n\nPress any key to exit...')
         exit()
     readme = ReadMe()
-    if result[0]:
-        update_local_UA(result[1])
+    if result[0] > 0:
+        update_local_UA(result[1], args.quite)
         if args.git_integration:
             readme.update_time_and_ua(result[1])
+    elif result[0] == -1:
+        logging.info('UA fetch fatal error. Check your UA scrapping source. Exit.')
+        input('\n\nPress any key to exit...')
+        exit()
     else:
         logging.info('No new UA found.')
         if args.git_integration:
@@ -40,7 +44,7 @@ def main(args):
         except Exception as e:
             logging.error(e, exc_info=True)
 
-    if not args.exit_on_completion:
+    if not args.quite:
         input('\n\nPress any key to exit...')
     exit()
 

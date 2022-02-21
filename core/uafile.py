@@ -8,10 +8,10 @@ def write_local_UA(new_UA):
     logging.info('User agents updated.')
 
 
-def update_local_UA(new_UA):
+def update_local_UA(new_UA, quite):
     print('\n\nNew UA found, update local UA file with the follow?\n')
     print(json.dumps(new_UA, indent=4, sort_keys=False))
-    if input('\nY/N:').lower() == 'y':
+    if quite or input('\nY/N:').lower() == 'y':
         write_local_UA(new_UA)
     else:
         logging.info('User refused to update local UA file.')

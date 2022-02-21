@@ -1,7 +1,10 @@
+import time
+from urllib.error import HTTPError
 import urllib.request
 import re
 import json
 import logging
+from copy import deepcopy
 
 from helper.exceptions import *
 
@@ -63,15 +66,21 @@ def is_UA_unchanged(remote_UA, local_UA):
 
 def update_all_from_remote():
     old_UA = read_local_ua()
-    new_UA = old_UA
+    new_UA = deepcopy(old_UA)
     flag = 0
+    no_error_count = 0
     for browser in BROWSER_HOSTS.keys():
         logging.info(f'Fetching UA for {browser}...')
         try:
             new_UA[browser] = fetch_UA(BROWSER_HOSTS[browser])
-        except (UAFetchError, UAParseError) as e:
+        except (UAFetchError, UAParseError, HTTPError) as e:
             logging.error(e, exc_info=True)
+            time.sleep(2)
             continue
         if not is_UA_unchanged(new_UA[browser], old_UA[browser]):
             flag = True
+        no_error_count += 1
+        time.sleep(2)
+    if no_error_count == 0:
+        flag = -1
     return flag, new_UA
