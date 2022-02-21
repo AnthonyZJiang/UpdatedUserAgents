@@ -4,7 +4,6 @@ import urllib.request
 import re
 import json
 import logging
-from copy import deepcopy
 
 from helper.exceptions import *
 
@@ -66,7 +65,7 @@ def is_UA_unchanged(remote_UA, local_UA):
 
 def update_all_from_remote():
     old_UA = read_local_ua()
-    new_UA = deepcopy(old_UA)
+    new_UA = old_UA.copy()
     flag = 0
     no_error_count = 0
     for browser in BROWSER_HOSTS.keys():
