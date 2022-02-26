@@ -1,5 +1,5 @@
-**Last checked:** 2022-02-21 12:40:52  
-**Last updated:** 2022-02-21 12:40:52  
+**Last checked:** 2022-02-26 18:59:50  
+**Last updated:** 2022-02-26 18:59:50  
 
 # Updated User Agents
 You can find some of the latest user agents here.
@@ -68,7 +68,7 @@ Mozilla/5.0 (iPhone; CPU iPhone OS 12_2_1 like Mac OS X) AppleWebKit/605.1.15 (K
 
 Windows:
 ```
-Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/97.0.1072.69
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62
 ```
 
 macOS:
