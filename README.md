@@ -1,5 +1,5 @@
-**Last checked:** 2022-05-04 20:38:33  
-**Last updated:** 2022-05-04 20:38:33  
+**Last checked:** 2022-05-09 21:15:52  
+**Last updated:** 2022-05-09 21:15:52  
 
 # Updated User Agents
 You can find some of the latest user agents here.
@@ -61,7 +61,7 @@ Mozilla/5.0 (Android 12; Mobile; rv:68.0) Gecko/68.0 Firefox/100.0
 
 iOS:
 ```
-Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/99.0 Mobile/15E148 Safari/605.1.15
+Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/100.0 Mobile/15E148 Safari/605.1.15
 ```
 
 ###  Edge
