@@ -8,9 +8,9 @@ from git_integration import git_add_commit_push
 
 
 def parse_args():
-    args = {'quite': False}
+    args = {'quiet': False}
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('-q', '--quite', action='store_true', dest='quite', default=False)
+    arg_parser.add_argument('-q', '--quiet', action='store_true', dest='quiet', default=False)
     arg_parser.add_argument('-l', '--log-level', action='store', dest='log_level', default='INFO')
     arg_parser.add_argument('-g', '--enable-git-integration', action='store_true', dest='git_integration', default=False)
     args = arg_parser.parse_args()
@@ -26,7 +26,7 @@ def main(args):
         exit()
     readme = ReadMe()
     if result[0] > 0:
-        update_local_UA(result[1], args.quite)
+        update_local_UA(result[1], args.quiet)
         if args.git_integration:
             readme.update_time_and_ua(result[1])
     elif result[0] == -1:
@@ -44,7 +44,7 @@ def main(args):
         except Exception as e:
             logging.error(e, exc_info=True)
 
-    if not args.quite:
+    if not args.quiet:
         input('\n\nPress any key to exit...')
     exit()
 
