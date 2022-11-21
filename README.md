@@ -1,5 +1,5 @@
-**Last checked:** 2022-11-20 19:47:38  
-**Last updated:** 2022-11-20 19:47:38  
+**Last checked:** 2022-11-21 14:08:12  
+**Last updated:** 2022-11-21 14:08:12  
 
 # Updated User Agents
 You can find some of the latest user agents here.
@@ -78,7 +78,7 @@ Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0_1) AppleWebKit/537.36 (KHTML, like G
 
 Android:
 ```
-Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 EdgA/107.0.1418.35
+Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 EdgA/107.0.1418.43
 ```
 
 iOS:
