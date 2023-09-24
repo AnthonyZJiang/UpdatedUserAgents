@@ -1,3 +1,25 @@
+###  Edge
+
+Windows:
+```
+<--edge_windows-->
+```
+
+macOS:
+```
+<--edge_macos-->
+```
+
+Android:
+```
+<--edge_android-->
+```
+
+iOS:
+```
+<--edge_ios-->
+```
+
 ### Chrome
 
 Windows:
@@ -40,26 +62,4 @@ Android:
 iOS:
 ```
 <--firefox_ios-->
-```
-
-###  Edge
-
-Windows:
-```
-<--edge_windows-->
-```
-
-macOS:
-```
-<--edge_macos-->
-```
-
-Android:
-```
-<--edge_android-->
-```
-
-iOS:
-```
-<--edge_ios-->
 ```
