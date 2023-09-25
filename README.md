@@ -13,7 +13,7 @@ Feel free to fetch [useragents.json](https://raw.githubusercontent.com/tmxkn1/Up
 ### Scripts
 
 ```
-python main.py -g -l info
+python main.py -q -g -l info
 
 python main.py -h # for help on the commands
 ```
